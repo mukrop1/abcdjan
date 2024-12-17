@@ -12,7 +12,12 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
-from django.conf.global_settings import EMAIL_BACKEND, MEDIA_ROOT, MEDIA_URL
+from django.conf.global_settings import (
+    EMAIL_BACKEND,
+    MEDIA_ROOT,
+    MEDIA_URL,
+    STATIC_ROOT,
+)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -142,3 +147,4 @@ STRIPE_API_VERSION = "2022-08-01"
 STRIPE_WEBHOOK_SECRET = (
     "whsec_18f0553d0a7a247f2749ea64cd279e1226af34878aed5af17f2d34a868978361"
 )
+STATIC_ROOT = BASE_DIR / "static"
