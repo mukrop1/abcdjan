@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "payment.apps.PaymentConfig",
     "coupons.apps.CouponsConfig",
     "rosetta",
+    "parler",
 ]
 
 MIDDLEWARE = [
@@ -159,3 +160,14 @@ REDIS_DB = 1
 LOCALE_PATHS = [
     BASE_DIR / "locale",
 ]
+
+PARLER_LANGUAGES = {
+    None: (
+        {"code": "en"},
+        {"code": "ru"},
+    ),
+    "default": {
+        "fallback": "en",
+        "hide_untranslated": False,
+    },
+}
