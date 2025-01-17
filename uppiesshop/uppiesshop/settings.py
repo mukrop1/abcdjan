@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+from django.utils.translation import gettext_lazy as _
 
 from django.conf.global_settings import (
     EMAIL_BACKEND,
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -113,10 +115,9 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# Internationalization
-# https://docs.djangoproject.com/en/5.1/topics/i18n/
+LANGUAGES = [("en", _("English")), ("ru", _("Russian"))]
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en"
 
 TIME_ZONE = "UTC"
 
@@ -153,3 +154,7 @@ STATIC_ROOT = BASE_DIR / "static"
 REDIS_HOST = "localhost"
 REDIS_PORT = 6379
 REDIS_DB = 1
+
+LOCALE_PATHS = [
+    BASE_DIR / "locale",
+]
