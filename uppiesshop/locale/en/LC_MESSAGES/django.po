@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-17 18:00+0500\n"
+"POT-Creation-Date: 2025-01-17 18:38+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,11 +75,31 @@ msgstr ""
 msgid "Place order"
 msgstr ""
 
+#: .\orders\urls.py:9
+msgid "create/"
+msgstr ""
+
+#: .\payment\urls.py:10
+msgid "process/"
+msgstr ""
+
+#: .\payment\urls.py:11
+msgid "completed/"
+msgstr ""
+
+#: .\payment\urls.py:12
+msgid "canceled/"
+msgstr ""
+
 #: .\shop\templates\shop\base.html:8
 msgid "Shop"
 msgstr ""
 
-#: .\shop\templates\shop\base.html:21
+#: .\shop\templates\shop\base.html:20
+msgid "Languages"
+msgstr ""
+
+#: .\shop\templates\shop\base.html:37
 #, python-format
 msgid ""
 "\n"
@@ -92,7 +112,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: .\shop\templates\shop\base.html:28
+#: .\shop\templates\shop\base.html:44
 msgid "Cart is empty!"
 msgstr ""
 
@@ -104,10 +124,26 @@ msgstr ""
 msgid "People usually bought these items together"
 msgstr ""
 
-#: .\uppiesshop\settings.py:118
+#: .\uppiesshop\settings.py:119
 msgid "English"
 msgstr ""
 
-#: .\uppiesshop\settings.py:118
+#: .\uppiesshop\settings.py:119
 msgid "Russian"
+msgstr ""
+
+#: .\uppiesshop\urls.py:12
+msgid "cart/"
+msgstr ""
+
+#: .\uppiesshop\urls.py:13
+msgid "orders/"
+msgstr ""
+
+#: .\uppiesshop\urls.py:14
+msgid "payment/"
+msgstr ""
+
+#: .\uppiesshop\urls.py:15
+msgid "coupons/"
 msgstr ""
